@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title>Edit Mahasiswa</title>
+</head>
+
+<body>
+  <!-- Decorative Elements -->
+  <div class="decoration cloud-decoration cloud-1">
+    <i class="fas fa-cloud"></i>
+  </div>
+  <div class="decoration cloud-decoration cloud-2">
+    <i class="fas fa-cloud"></i>
+  </div>
+  <div class="decoration cloud-decoration cloud-3">
+    <i class="fas fa-cloud"></i>
+  </div>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.php">
+      <i class="fas fa-graduation-cap mr-2"></i>Mahasiswa
+    </a>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <h4><i class="fas fa-user-edit mr-2"></i>Edit Data Mahasiswa</h4>
+          </div>
+          <div class="card-body">
+            <form action="index.php?action=update_submit" method="post">
+              <input type="hidden" name="id" value="DATA_ID">
+              <div class="form-group row">
+                <label for="nim" class="col-sm-3 col-form-label">NIM</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="nim" name="nim" value="DATA_NIM" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="nama" name="nama" value="DATA_NAMA" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="tempat" class="col-sm-3 col-form-label">Tempat Lahir</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="tempat" name="tempat" value="DATA_TEMPAT" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="tl" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" id="tl" name="tl" value="DATA_TL" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="gender" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                <div class="col-sm-9">
+                  <select class="form-control" id="gender" name="gender" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki" DATA_SELECTED_LAKI>Laki-laki</option>
+                    <option value="Perempuan" DATA_SELECTED_PEREMPUAN>Perempuan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="email" name="email" value="DATA_EMAIL" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="telp" class="col-sm-3 col-form-label">Telepon</label>
+                <div class="col-sm-9">
+                  <input type="tel" class="form-control" id="telp" name="telp" value="DATA_TELP" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-9 offset-sm-3">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save mr-2"></i>Update
+                  </button>
+                  <a href="index.php" class="btn btn-secondary ml-2">
+                    <i class="fas fa-arrow-left mr-2"></i>Kembali
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

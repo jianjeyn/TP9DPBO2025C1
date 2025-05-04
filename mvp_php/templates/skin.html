@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title>Data Mahasiswa</title>
+</head>
+
+<body>
+  <!-- Decorative Elements -->
+  <div class="decoration cloud-decoration cloud-1">
+    <i class="fas fa-cloud"></i>
+  </div>
+  <div class="decoration cloud-decoration cloud-2">
+    <i class="fas fa-cloud"></i>
+  </div>
+  <div class="decoration cloud-decoration cloud-3">
+    <i class="fas fa-cloud"></i>
+  </div>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.php">
+      <i class="fas fa-graduation-cap mr-2"></i>Mahasiswa
+    </a>
+  </nav>
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="card">
+          <div class="card-header">
+            <h3><i class="fas fa-users mr-3"></i>Data Mahasiswa</h3>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>NIM</th>
+                    <th>NAMA</th>
+                    <th>TEMPAT</th>
+                    <th>TANGGAL LAHIR</th>
+                    <th>GENDER</th>
+                    <th>EMAIL</th>
+                    <th>TELEPON</th>
+                    <th>AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  DATA_TABEL
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center mt-4">
+              <a href="index.php?action=add" class="btn btn-success">
+                <i class="fas fa-plus-circle mr-2"></i>Tambah Mahasiswa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
